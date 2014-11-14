@@ -1,0 +1,6 @@
+<script>
+// Scripta bodyan dagoenean dagoenean
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Textua aldatu egin da.";
+}
+</script>

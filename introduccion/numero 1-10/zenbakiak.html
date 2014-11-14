@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Sartu 1 eta 20 ren artean dagoen zenbaki bat</p>
+
+<input id="numb" type="number">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+	//definicion de las variables
+    var x, text;
+
+    // numb id a duen inputa aldagaiean sartzen du
+
+    x = document.getElementById("numb").value;
+
+    // X aldagaia zenbakia ez bada ez du funtzionatuko
+
+    if (isNaN(x) || x < 1 || x > 20) {
+        text = "Ez da 1 eta 20 en arteko zenbakia";
+    } else {
+        text = "Onartua";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html> 
+

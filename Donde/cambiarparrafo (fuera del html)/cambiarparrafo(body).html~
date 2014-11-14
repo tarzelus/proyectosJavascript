@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+
+<h1>Prona</h1>
+<script type="text/javascript" src="script.js"></script>
+
+<p id="demo">Hasieran dagoen textua</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+
+
+
+
+
+</body>
+</html>

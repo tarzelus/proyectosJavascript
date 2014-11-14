@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>comparacion de numeros</p>
+
+<input id="zenbaki" type="number">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    //declaracion de las variables
+    var x, text;
+
+    //zenbaki an sartutako balioa laortzeko
+
+    x = document.getElementById("zenbaki").value;
+
+    // x aren balia alderatzen du eta hiru bakldintzak bete behar ditu
+
+    if (isNaN(x) || x < 1 || x > 10) {
+        text = "ez duzu zenbaki egokia sartu ";
+    } else {
+        text = "zenbakia onartua izan da";
+    }
+     //demo id a duenari text variablearen balioa pasako dio
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html> 
