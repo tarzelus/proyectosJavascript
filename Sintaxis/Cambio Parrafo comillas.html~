@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>String literals can be written with double or single quotes.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 'Telmo Arzelus';
+//document.getElementById("demo").innerHTML = "Telmo Arzelus";
+</script>
+
+</body>
+</html>
