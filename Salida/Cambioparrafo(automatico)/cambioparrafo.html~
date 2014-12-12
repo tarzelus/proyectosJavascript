@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Web Page</h1>
+
+<p id="demo">My First Paragraph.</p>
+
+<script>
+//de esta manera cambiara el elemento que tenga el id "demo" y escribira parrafo cambiado
+document.getElementById("demo").innerHTML = "Parrafo cambiado.";
+</script>
+
+</body>
+</html> 

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Escribiendo con el script</h1>
+
+<p>Escribiendo con el script</p>
+
+<script>
+document.write("probando");
+document.write(Date());
+</script>
+
+</body>
+</html> 
+
