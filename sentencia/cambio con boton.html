@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Sakatzean aldatzen</h1>
+
+<p id="myPar">hasieran dagoena</p>
+<div id="myDiv">hasieran dagoena 1</div>
+
+<p>
+<button type="button" onclick="myFunction()">Sakatu</button>
+</p>
+
+<script>
+
+//cambia el contenido del parrafo al darle al boron, al pinchar el boton se ejecuta la funcion que se especifica a continuacion.
+function myFunction() {
+    document.getElementById("myPar").innerHTML = "aldatuta p";
+    document.getElementById("myDiv").innerHTML = "aldatuta div";
+}
+</script>
+
+<p>klikatzena aldatu egingo da parrafoa</p>
+
+</body>
+</html>
