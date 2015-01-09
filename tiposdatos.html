@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- *********************impresion de los datos****************************** -->
+<p id="proba">variables de cualquier tipo</p>
+</br>
+<p id="demo"></p>
+</br>
+<p id="coches">variables de tipo array</p>
+</br>
+<p id="pertsona">variables de propiedad de un objeto</p>
+</br>
+<p id="mota">variables que tipo de objeto</p>
+</br>
+<p id="ppp">variables de propiedad de un objeto</p>
+<!-- ************************************************************************* -->
+
+
+<script>
+//con lo siguiente dara el valor de 8 numero a la variable x y lo imprimira
+// las variables seran de cualquier tipo  
+var x = 8 + " numero";
+document.getElementById("proba").innerHTML = x;
+
+
+//con los numeros pasa lo mismo 
+var x1 = 34.00;
+var x2 = 34;
+var y = 123e5;
+var z = 123e-5;
+
+document.getElementById("demo").innerHTML = x1 + "<br>" + x2 + "<br>" + y + "<br>" + z
+
+// se pueden crear variables de tipo array:
+var coche = ["Saab","Volvo","BMW"];
+
+document.getElementById("coches").innerHTML = coche[1];
+
+//se pueden crear como propiedades de un objeto
+var persona = {
+    nombre : "Telmo",
+    apellido  : "Arzelus",
+    edad       : 21,
+    colorOjos  : "marrones"
+    };
+
+    document.getElementById("pertsona").innerHTML = persona.nombre + "k " + persona.edad + " urte ditu.";
+
+//te dice el tipo de cada varaible 
+document.getElementById("mota").innerHTML = 
+typeof "Telmo" + "<br>" + 
+typeof 3.14 + "<br>" +
+typeof false + "<br>" +
+typeof [1,2,3,4] + "<br>" +
+typeof {name:'Telmo', age:31};
+
+
+//no es de ningun tipo
+var ppp;
+document.getElementById("ppp").innerHTML =ppp + "<br>" + typeof ppp;
+</script>
+</script>
+
+</body>
+</html>
+
+
