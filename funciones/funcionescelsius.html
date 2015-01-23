@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Introduce los grados en farenheit para convertirlos a celsius.</p>
+
+<input id="numb" type="number">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+
+
+<script>
+
+function myFunction(x) 
+	{
+		//le da el valor introducido previamente a x para calcular los grados en celsius
+		x = document.getElementById("numb").value;
+		//definicion de las variables y darle valor
+    	var calcular = (x-32)*5/9;
+    	document.getElementById("demo").innerHTML = calcular;
+
+	}
+
+	/*------egiteko beste era bat:
+		<p id="demo"></p>
+
+		<script>
+		function toCelsius(f) {
+		    return (5/9) * (f-32);
+		}
+		document.getElementById("demo").innerHTML = toCelsius(32);
+		// parentesi arteko 32 a kenduko bagenu funtzioa azalduko litzateke html an
+
+	*/
+
+	
+</script>
+
+</body>
+</html>
+
