@@ -2,17 +2,17 @@
 <html>
 <body>
 
+<p>This example calls a function to convert from Fahrenheit to Celsius:</p>
 <p id="demo"></p>
 
 <script>
 document.getElementById("demo").innerHTML =
-"200 en % 25 " + ehunekoa(25) + " da";
+"The temperature is " + toCelsius(32) + " Centigrade";
 
-function ehunekoa(ehuneko) {
-    return ehuneko *100;
+function toCelsius(fahrenheit) {
+    return (5/9) * (fahrenheit-32);
 } 
 </script>
 
 </body>
 </html>
-

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Ojetuien erabilera javascripten</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+//definición y creacion del objeto (se puede definir en diferentes lineas)
+var person = {izena:"Telmo",
+ 				abizena:"Arzelus",
+				adina:22,
+   				begikolore:"marroi",
+   				//creando metodos de objeto
+				osoa : function(c) {
+       				return this.izena + " " + this.abizena;
+    			}
+			};
+
+//para acceder a los propiedades de los objetos
+document.getElementById("demo").innerHTML =
+person.izena + " -k " + person.adina + " urte ditu.";
+
+//accediendo de otra manera
+document.getElementById("demo1").innerHTML =
+person["izena"] + " " + person["abizena"];
+
+//para acceder al metodo del objeto
+document.getElementById("demo2").innerHTML = person.osoa();
+
+</script>
+
+</body>
+</html>
