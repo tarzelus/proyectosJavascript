@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>honekin botoia sakatu eta demo1 ean inprimituko du --></p>
+<button onclick="getElementById('demo').innerHTML=Date()">The time is?</button>
+
+<p id="demo">demo1</p>
+
+<p> honekin botoia sakatu eta botoian bertan inprimituko du </p>
+<button onclick="this.innerHTML=Date()">The time is?</button>
+
+
+<p>klikatu data inprimitzeko honekin funtzioa ejekutatu eta funtziak demo2 ren bitartez inprimituko du</p>
+
+<button onclick="displayDate()">The time is?</button>
+
+<script>
+function displayDate() {
+    document.getElementById("demo2").innerHTML = Date();
+}
+</script>
+<p id="demo2">demo2</p>
+</body>
+</html>
